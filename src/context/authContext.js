@@ -75,7 +75,7 @@ export const AuthContextProvider = ({ children }) => {
           Authorization: `Bearer ${token}`,
         },
       });
-      // setting user list and admin token with the result from API call on '/'
+      // setting user list and admin token with the result from API call on '/users'
       setUsers(res.data);
       setNewAdminToken(token);
     } catch (e) {
